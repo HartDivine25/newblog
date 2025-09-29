@@ -1,0 +1,118 @@
+<!--
+Real-world styled portfolio blog template
+Topic: Vibration-based Seed Dispensing in Mechanical Engineering / Robotics
+Save as index.html, or host with GitHub Pages/Netlify for deployment.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Divine Hart — Mechanical Engineering Blog</title>
+  <style>
+    :root{
+      --bg:#f9fafb;--card:#c5320d;--muted:#6b7280;--accent:#0ea5e9;--text:#111827;--border:#e5e7eb
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:var(--bg);color:var(--text);line-height:1.7}
+    .container{max-width:1080px;margin:auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--border)}
+    .logo{font-weight:700;font-size:1.4rem;color:var(--accent)}
+    nav a{color:var(--text);text-decoration:none;margin-left:18px;font-weight:500;transition:color .2s}
+    nav a:hover{color:var(--accent)}
+    .hero{margin-top:28px;padding:28px;background:var(--card);border-radius:14px;box-shadow:0 3px 10px rgba(0,0,0,0.06)}
+    .hero img{width:100%;border-radius:10px;margin:16px 0}
+    .meta{color:var(--muted);font-size:0.9rem;margin-bottom:10px}
+    h1{font-size:1.8rem;margin-bottom:4px}
+    h2{font-size:1.4rem;margin:18px 0 10px}
+    h3{margin:14px 0 8px}
+    p{margin-bottom:14px}
+    ul,ol{margin-left:20px;margin-bottom:14px}
+    .tags{display:flex;gap:10px;margin:12px 0}
+    .tag{background:var(--accent);color:white;padding:6px 12px;border-radius:999px;font-size:0.85rem}
+    .grid{display:grid;grid-template-columns:3fr 1fr;gap:20px;margin-top:24px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
+    footer{text-align:center;margin-top:40px;padding:20px;color:var(--muted);border-top:1px solid var(--border)}
+    .btn{display:inline-block;padding:10px 16px;border-radius:8px;background:var(--accent);color:#fff;font-weight:600;text-decoration:none;margin-top:12px}
+    pre{background:#1e293b;color:#f1f5f9;padding:12px;border-radius:8px;overflow-x:auto;font-size:0.85rem}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Divine Hart</div>
+      <nav>
+        <a href="#article">Blog</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="article">
+      <h1>How Vibrations Improve Seed Dispensing Accuracy</h1>
+      <div class="meta">By Divine Hart • Sep 28, 2025 • Mechanical Engineering Insights</div>
+      <img src="https://picsum.photos/1000/400?grayscale" alt="Seeder illustration" />
+      <div class="tags">
+        <span class="tag">Mechanical Engineering</span>
+        <span class="tag">Robotics</span>
+        <span class="tag">Agritech</span>
+      </div>
+      <img src="photo_2025-07-13_01-38-00.jpg",alt="Seed Planting Machine" align="centre" />
+
+      <p>
+        Seed planting machines require precise control of spacing for efficient crop yield. One approach is <strong>vibration-based dispensing</strong>, where a vibrating hopper or disc ensures that seeds are released one at a time at predictable intervals. This simple yet powerful mechanism reduces clogging, improves uniformity, and cuts cost compared to complex mechanical systems.
+      </p>
+      
+      <h2>Why Vibrations?</h2>
+      <p>
+        Vibrations reduce bridging (when seeds clump together) and encourage a steady flow. By tuning the frequency and amplitude, designers achieve reliable singulation across varying seed types and sizes.
+      </p>
+      <h2>Design Factors</h2>
+      <ul>
+        <li><b>Amplitude & frequency:</b> matched to seed mass and geometry.</li>
+        <li><b>Slot geometry:</b> affects how seeds align and drop.</li>
+        <li><b>Isolation:</b> prevents unwanted transmission to the whole chassis.</li>
+        <li><b>Sensors:</b> optical sensors can confirm seed passage.</li>
+      </ul>
+      <h2>Simple Experimental Setup</h2>
+      <p>
+        A DC motor with an eccentric mass attached to a seed hopper is a classic method. By testing different vibration settings, spacing accuracy can be measured and optimized.
+      </p>
+      <pre>// pseudo-code
+while planting:
+  if seed_sensor detects passage:
+    wait spacing_interval
+    pulse vibration_motor()
+end</pre>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3 id="portfolio">Project Portfolio</h3>
+        <p>Some hands-on engineering projects I’ve worked on:</p>
+        <ul>
+          <li>Manual Plant Seeder Machine — design, CAD modeling, fabrication</li>
+          <li>Solar Panel Structural Analysis (Autodesk tools)</li>
+          <li>Robotics research — vibration-assisted dispensing</li>
+        </ul>
+      </div>
+
+      <aside class="card" id="about">
+        <h3>About Me</h3>
+        <p>
+          I’m <b>Divine Hart</b>, a final-year Mechanical Engineering student passionate about agricultural mechanization and robotics. My goal is to design cost-effective solutions that solve real-world challenges.
+        </p>
+        <h3>Contact</h3>
+        <p id="contact">Let’s connect for collaboration or research:</p>
+        <a class="btn" href="mailto:divine@example.com">Email Me</a>
+      </aside>
+    </section>
+
+    <footer>
+      © 2025 Divine Hart — Portfolio Blog.
+    </footer>
+  </div>
+</body>
+</html>
